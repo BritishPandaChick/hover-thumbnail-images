@@ -1,0 +1,27 @@
+/*custom font - Montserrat*/
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+
+/* basic reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* A nice background */
+body {
+  background: linear-gradient("#544, #565")
+}
+
+/* Thumbnail Background */
+.thumb {
+  width: 400px;
+  height: 300px;
+  margin: 70px auto;
+}
+
+.thumb a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url("https://cdn.pixabay.com/photo/2017/02/25/15/08/dimsum-2097947__340.jpg")
+}
