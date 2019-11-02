@@ -89,13 +89,19 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 100px 100px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s;
+  /* by default the shadow will be almost flat, very transparent, scaled with a very large blur */
+  opacity: 0.15;
+  transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+  transform-origin: bottom;
 }
 
 .thumb:hover a:before {
-  background: rgba(0, 0, 0, 0.5);
+  opacity: 1;
   /* blurred effect using box shadow as filter: blur is not supported in all browsers */
   box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
   /* pushing the shadow down and scaling it down to size */
-  transform: translateX(-60px) scale(0.85);
-  /* that's almost the final hover look. now we will create the proper hover effect */
+  transform: rotateX(0) translateZ(-60px)scale(0.85);
 }
